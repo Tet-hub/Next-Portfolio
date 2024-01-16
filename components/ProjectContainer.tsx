@@ -33,11 +33,11 @@ const ProjectContainer = ({ image, title, lines = [] }: Props) => {
       </div>
       <div className="md:w-1/2 order-2 text-left">
         <div className="text-white w-full md:w-3/4 lg:w-2/3 xl:w-1/2 mx-auto">
-          <h1 className="text-3xl text-white mt-4 md:mt-0">{title}</h1>
+          <h1 className="text-3xl blue-text uppercase mt-4 md:mt-0">{title}</h1>
           <div className="text-base">
             {lines.map(({ label, value }, index) => (
               <p key={index} className="my-2">
-                <span className="opacity-100">{label}: </span>
+                <span className="blue-text">{label}: </span>
                 {Array.isArray(value) ? (
                   <span className="opacity-80">{value.join(", ")}</span>
                 ) : (

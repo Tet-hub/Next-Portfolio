@@ -34,7 +34,7 @@ const ProjectSlider = () => {
       itemClass="item"
     >
       <ProjectContainer
-        image="/images/p1.jpg"
+        image="/images/projects/konbini-index.png"
         title="KonbiniSense"
         lines={[
           { label: "Frontend", value: "React Native" },
@@ -45,7 +45,7 @@ const ProjectSlider = () => {
         ]}
       />
       <ProjectContainer
-        image="/images/p2.jpg"
+        image="/images/projects/epharmascripts-index.png"
         title="E-PharmaScripts"
         lines={[
           {
@@ -59,7 +59,7 @@ const ProjectSlider = () => {
         ]}
       />
       <ProjectContainer
-        image="/images/p2.jpg"
+        image="/images/projects/bookhub-index.png"
         title="BookHub"
         lines={[
           { label: "Frontend", value: "ASP.NET" },
@@ -71,7 +71,7 @@ const ProjectSlider = () => {
       />
 
       <ProjectContainer
-        image="/images/p1.jpg"
+        image="/images/projects/gocantini-index.png"
         title="Go-Cantini"
         lines={[
           { label: "Frontend", value: ["Html", "CSS", "Bootstrap"] },

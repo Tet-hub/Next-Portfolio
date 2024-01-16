@@ -4,7 +4,7 @@ import Hero from "@/components/Hero";
 import MobileNav from "@/components/MobileNav";
 import Nav from "@/components/Nav";
 import ProjectDetails from "@/components/ProjectDetails";
-import Projects from "@/components/Projects";
+import Certificates from "@/components/Certificates";
 import Services from "@/components/Services";
 import SkillSet from "@/components/SkillSet";
 import React, { useState } from "react";
@@ -26,8 +26,8 @@ const HomePage = () => {
         <Services />
         <Education />
         <SkillSet />
-        <Projects />
         <ProjectDetails />
+        <Certificates />
       </div>
     </div>
   );

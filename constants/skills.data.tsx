@@ -1,13 +1,14 @@
 const skillsData = [
-  { skill: "html", level: "w-[85%]" },
-  { skill: "css", level: "w-[70%]" },
-  { skill: "bootstrap", level: "w-[90%]" },
-  { skill: "tailwind", level: "w-[90%]" },
-  { skill: "php", level: "w-[80%]" },
-  { skill: "asp.net", level: "w-[60%]" },
-  { skill: "reactjs", level: "w-[80%]" },
-  { skill: "nodejs", level: "w-[82%]" },
-  { skill: "typescript", level: "w-[50%]" },
+  { id: 1, skill: "html", logo: "/images/techstack/html.svg" },
+  { id: 2, skill: "css", logo: "/images/techstack/css.svg" },
+  { id: 3, skill: "bootstrap", logo: "/images/techstack/bootstrap.svg" },
+  { id: 4, skill: "tailwind", logo: "/images/techstack/tailwind.png" },
+  { id: 5, skill: "php", logo: "/images/techstack/php.png" },
+  { id: 7, skill: "reactjs", logo: "/images/techstack/reactjs.svg" },
+  { id: 8, skill: "nodejs", logo: "/images/techstack/nodejs.svg" },
+  { id: 6, skill: "C#", logo: "/images/techstack/asp.png" },
+  { id: 9, skill: "typescript", logo: "/images/techstack/typescript.png" },
+  { id: 10, skill: "nextjs", logo: "/images/techstack/nextjs.svg" },
 ];
 
 export default skillsData;

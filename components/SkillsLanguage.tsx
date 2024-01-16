@@ -1,8 +1,8 @@
 import React from "react";
-
+import Image from "next/image";
 interface SkillData {
   skill: string;
-  level: string;
+  logo: string;
 }
 
 interface Props {
@@ -10,25 +10,18 @@ interface Props {
 }
 
 const SkillsLanguage: React.FC<Props> = ({ skills }) => {
-  const levels = skills.map((skill) => skill.level);
-
-  if (skills.length !== levels.length) {
-    console.error("Skills and levels arrays must have the same length.");
-    return null;
-  }
-
   return (
-    <div className="mb-8">
+    <div className="mb-[3rem]">
       {skills.map((skill, index) => (
-        <h1
+        <div
           key={index}
-          className="p-5 w-[100%] uppercase bg-gray-600 rounded-sm text-white my-2 text-[20px] font-bold relative overflow-hidden"
+          className="p-5 flex items-center uppercase bg-gray-600 rounded-sm text-white my-2 text-[20px] font-bold"
         >
+          <span className="mr-2">
+            <Image src={skill.logo} alt={skill.skill} width={60} height={60} />
+          </span>
           {skill.skill}
-          <span
-            className={`${skill.level} left-0 right-0 bottom-0 h-[6px] absolute bg-[#55e6a5]`}
-          ></span>
-        </h1>
+        </div>
       ))}
     </div>
   );

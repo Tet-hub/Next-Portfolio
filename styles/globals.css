@@ -6,14 +6,37 @@
 
 @layer components {
   .nav-link {
-    @apply relative font-semibold text-white cursor-pointer text-[17px] w-fit md:block after:block after:content-[''] after:absolute after:h-[3px] after:bg-yellow-400 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center hidden;
+    @apply relative font-semibold text-white cursor-pointer text-lg w-fit md:block after:block after:content-[''] after:absolute after:h-[3px] after:bg-yellow-400 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center hidden;
   }
 
   .nav-link-mobile {
-    @apply relative mb-[2rem] font-semibold text-white cursor-pointer text-[27px] w-fit md:block after:block after:content-[''] after:absolute after:h-[3px] after:bg-yellow-400 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center;
+    @apply relative mb-[2rem] font-semibold text-white cursor-pointer text-[27px] w-fit md:block after:block after:content-[''] after:absolute after:h-[3px] after:bg-yellow-400 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 uppercase after:origin-center;
   }
 
   .heading {
     @apply text-center text-white text-[28px] sm:text-[33px] md:text-[45px] font-bold uppercase;
+  }
+
+  .section-header {
+    @apply pb-[6rem] pt-[5rem] md:pt-[8rem];
+  }
+  .yellow-text {
+    @apply text-[#F2E559];
+  }
+  .gray-text {
+    @apply text-[#ADA9AA];
+  }
+  .blue-text {
+    @apply text-blue-400;
+  }
+  .yellow-bg {
+    @apply bg-[#F2E559];
+  }
+  .blue-bg {
+    @apply bg-blue-400;
+  }
+
+  .gray-bg {
+    @apply bg-[#ADA9AA];
   }
 }
