@@ -3,6 +3,13 @@ import Particle from "./Particles";
 import Image from "next/image";
 import { ArrowDownTrayIcon } from "@heroicons/react/20/solid";
 import Link from "next/link";
+import socialData from "@/constants/social.data";
+
+interface socialData {
+  logo: string[];
+  url: string[];
+  title: string[];
+}
 
 const Hero = () => {
   return (
@@ -14,17 +21,27 @@ const Hero = () => {
             <span className="text-white text-2xl">DEVE</span>
             <span className="yellow-text text-2xl">LOPER</span>
             <hr className="b-2 yellow-text" />
-            HI, I&apos;M<span className="yellow-text"> JAY MAR!</span>
+            HI, I&apos;M<span className="yellow-text"> JAY MAR</span>!
           </h1>
-          <p className="mt-[1rem] text-[17px] text-gray-200">
-            Social Media Logo here
-          </p>
-          <div className="mt-[2rem] flex-col space-y-6 sm:space-y-0 sm:flex sm:flex-row items-center sm:space-x-6">
+          <div className="flex flex-row gap-4 my-8">
+            {socialData.map((data, index) => (
+              <Link href={data.url} target="_blank" key={index}>
+                <Image
+                  src={data.logo}
+                  alt={data.title}
+                  title={data.title}
+                  width={30}
+                  height={30}
+                />
+              </Link>
+            ))}
+          </div>
+          <div className="mt-[2rem] flex-col space-y-6 sm:space-y-0 sm:flex sm:flex-row items-center sm:space-x-6 ">
             <Link
-              className="px-[2rem] hover:yellow-bg transition-all duration-200 py-[1rem] text-[18px] font-bold uppercase blue-bg text-black flex items-center space-x-2"
-              href="images/cv/Rebanda-Jay-Mar-P.-CV.pdf"
+              className="px-[2rem] hover:yellow-bg transition-all duration-200 py-[1rem] text-[18px] font-bold uppercase blue-bg text-black flex items-center space-x-2 justify-center"
+              href="images/cv/Rebanda, Jay Mar P - CV.pdf"
               target="_blank"
-              download="Rebanda-Jay-Mar-P.-CV.pdf"
+              download="Rebanda, Jay Mar P - CV.pdf"
             >
               <p>Download CV</p>
               <ArrowDownTrayIcon className="w-[1.6rem] h-[1.7rem] text-black" />

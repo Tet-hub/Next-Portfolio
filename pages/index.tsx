@@ -1,12 +1,12 @@
-import About from "@/components/About";
+import Hero from "@/components/HeroSection";
+import About from "@/components/AboutSection";
+import Services from "@/components/ServiceSection";
 import Education from "@/components/Education";
-import Hero from "@/components/Hero";
 import MobileNav from "@/components/MobileNav";
 import Nav from "@/components/Nav";
-import ProjectDetails from "@/components/ProjectDetails";
-import Certificates from "@/components/Certificates";
-import Services from "@/components/Services";
-import SkillSet from "@/components/SkillSet";
+import ProjectDetails from "@/components/ProjeectSection";
+import Certificates from "@/components/CertificateSection";
+import SkillSet from "@/components/SkillSection";
 import React, { useState } from "react";
 
 const HomePage = () => {
