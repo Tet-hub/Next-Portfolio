@@ -20,14 +20,14 @@ interface Props {
 const ProjectContainer = ({ image, title, lines = [] }: Props) => {
   return (
     <div className="container mx-auto flex flex-col md:flex-row items-center">
-      <div className="md:w-[40%] order-1">
+      <div className="md:w-[60%] order-1">
         <Image
           src={image}
           alt={title}
           layout="responsive"
           objectFit="contain"
-          width={100}
-          height={100}
+          width={200}
+          height={200}
           className="mx-auto mt-14 md:mb-0 w-full md:w-3/4 lg:w-2/3 xl:w-1/2 px-[1rem]"
         />
       </div>
