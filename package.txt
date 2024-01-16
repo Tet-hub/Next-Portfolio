@@ -1,0 +1,22 @@
+guides
+echo "# Next-Portfolio" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Tet-hub/Next-Portfolio.git
+git push -u origin main
+
+
+git remote add origin https://github.com/Tet-hub/Next-Portfolio.git
+git branch -M main
+git push -u origin main
+
+
+1/15/24
+npm install @heroicons/react
+npm i tsparticles-engine react-tsparticles tsparticles-slim
+
+
+1/16/24
+npm i react-multi-carousel
