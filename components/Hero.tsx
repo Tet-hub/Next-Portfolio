@@ -14,10 +14,10 @@ const Hero = () => {
             <span className="text-white text-2xl">DEVE</span>
             <span className="yellow-text text-2xl">LOPER</span>
             <hr className="b-2 yellow-text" />
-            HI, I'M<span className="yellow-text"> JAY MAR!</span>
+            HI, I&apos;M<span className="yellow-text"> JAY MAR!</span>
           </h1>
           <p className="mt-[1rem] text-[17px] text-gray-200">
-            Social Media Logo here -----------------
+            Social Media Logo here
           </p>
           <div className="mt-[2rem] flex-col space-y-6 sm:space-y-0 sm:flex sm:flex-row items-center sm:space-x-6">
             <Link
