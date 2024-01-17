@@ -20,3 +20,7 @@ npm i tsparticles-engine react-tsparticles tsparticles-slim
 
 1/16/24
 npm i react-multi-carousel
+
+1/17/24
+npm i react-vertical-timeline-component
+npm i --save-dev @types/react-vertical-timeline-component

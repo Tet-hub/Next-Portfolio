@@ -4,7 +4,7 @@ import Services from "@/components/ServiceSection";
 import Education from "@/components/Education";
 import MobileNav from "@/components/MobileNav";
 import Nav from "@/components/Nav";
-import ProjectDetails from "@/components/ProjeectSection";
+import ProjectDetails from "@/components/ProjectSection";
 import Certificates from "@/components/CertificateSection";
 import SkillSet from "@/components/SkillSection";
 import React, { useState } from "react";

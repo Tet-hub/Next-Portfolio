@@ -1,4 +1,5 @@
-social media logo
+social media logo -- done
+projectslider -- done
+updating cv -- done
 framer motions
 footer
-and updating cv
