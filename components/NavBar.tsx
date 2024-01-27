@@ -1,5 +1,5 @@
 import { Bars2Icon } from "@heroicons/react/20/solid";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
@@ -7,8 +7,13 @@ interface Props {
   openNav: () => void;
 }
 
-const Nav = ({ openNav }: Props) => {
+const Navbar = ({ openNav }: Props) => {
   const router = useRouter();
+  const [activeLink, setActiveLink] = useState<string>("");
+
+  useEffect(() => {
+    setActiveLink(router.asPath);
+  }, [router.asPath]);
 
   return (
     <div className="w-[100%] fixed z-[1000] h-[12vh] bg-[#141c27] shadow-md">
@@ -18,14 +23,14 @@ const Nav = ({ openNav }: Props) => {
             className={`flex-[0.6] cursor-pointer text-[25px] text-white font-bold`}
           >
             PORT
-            <span className="text-yellow-500">FOLIO</span>
+            <span className="yellow-text">FOLIO</span>
           </h1>
         </Link>
         <Link href="#about" passHref>
           <div
             className={`nav-link ${
-              router.asPath === "/#about"
-                ? "text-yellow-500 border-b-2 border-yellow-400"
+              activeLink === "/#about"
+                ? "yellow-text border-b-2 border-yellow-400"
                 : ""
             }`}
           >
@@ -35,8 +40,8 @@ const Nav = ({ openNav }: Props) => {
         <Link href="#education" passHref>
           <div
             className={`nav-link ${
-              router.asPath === "/#education"
-                ? "text-yellow-500 border-b-2 border-yellow-400"
+              activeLink === "/#education"
+                ? "yellow-text border-b-2 border-yellow-400"
                 : ""
             }`}
           >
@@ -46,8 +51,8 @@ const Nav = ({ openNav }: Props) => {
         <Link href="#skills" passHref>
           <div
             className={`nav-link ${
-              router.asPath === "/#skills"
-                ? "text-yellow-500 border-b-2 border-yellow-400"
+              activeLink === "/#skills"
+                ? "yellow-text border-b-2 border-yellow-400"
                 : ""
             }`}
           >
@@ -57,8 +62,8 @@ const Nav = ({ openNav }: Props) => {
         <Link href="#projects" passHref>
           <div
             className={`nav-link ${
-              router.asPath === "/#projects"
-                ? "text-yellow-500 border-b-2 border-yellow-400"
+              activeLink === "/#projects"
+                ? "yellow-text border-b-2 border-yellow-400"
                 : ""
             }`}
           >
@@ -68,8 +73,8 @@ const Nav = ({ openNav }: Props) => {
         <Link href="#certificates" passHref>
           <div
             className={`nav-link ${
-              router.asPath === "/#certificates"
-                ? "text-yellow-500 border-b-2 border-yellow-400"
+              activeLink === "/#certificates"
+                ? "yellow-text border-b-2 border-yellow-400"
                 : ""
             }`}
           >
@@ -84,4 +89,4 @@ const Nav = ({ openNav }: Props) => {
   );
 };
 
-export default Nav;
+export default Navbar;

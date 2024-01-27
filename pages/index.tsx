@@ -3,7 +3,7 @@ import About from "@/components/AboutSection";
 import Services from "@/components/ServiceSection";
 import Education from "@/components/Education";
 import MobileNav from "@/components/MobileNav";
-import Nav from "@/components/Nav";
+import Navbar from "@/components/NavBar";
 import ProjectDetails from "@/components/ProjectSection";
 import Certificates from "@/components/CertificateSection";
 import SkillSet from "@/components/SkillSection";
@@ -18,7 +18,7 @@ const HomePage = () => {
     <div className="overflow-x-hidden">
       <div id="hero">
         <MobileNav nav={nav} closeNav={closeNav} />
-        <Nav openNav={openNav} />
+        <Navbar openNav={openNav} />
         <Hero />
       </div>
       <div className="relative z-[30]">
